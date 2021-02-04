@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "Angularr"
+  "defaultProject": "Angularr",
+  "cli": {
+    "analytics": "ea14a923-57ab-4027-9564-38dd5d29f2ab"
+  }
 }
