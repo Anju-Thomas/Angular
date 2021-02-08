@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 
 
@@ -8,7 +9,7 @@ import { Injectable } from '@angular/core';
 export class DependencyService {
   
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
   showTodayDate(){
     let ndate=new Date();
     return ndate;
