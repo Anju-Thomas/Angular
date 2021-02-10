@@ -1,5 +1,5 @@
-<app-parent></app-parent>
-<app-pipe></app-pipe>
+<!-- <app-parent></app-parent> -->
+<!-- <app-pipe></app-pipe>
 
 <br>
 <br>
@@ -10,4 +10,17 @@
 <app-create-item></app-create-item>
 <app-view-item></app-view-item>
 <app-employeelist></app-employeelist>
-<app-employeedetail></app-employeedetail>
+<app-employeedetail></app-employeedetail> -->
+<div style="background-color: rgb(189, 133, 187);">
+<p style="color:orange;text-align: center;">ROUTING AND NAVIGATION</p>
+</div>
+<nav>
+    
+    <a routerLink="/parent" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Parent</a><br>
+
+    <a routerLink="/child" routerLinkActive="active1">Child</a>
+    
+
+</nav>
+
+<router-outlet></router-outlet>

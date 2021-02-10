@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
@@ -18,6 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmployeelistComponent } from './employeelist/employeelist.component';
 import { EmployeedetailComponent } from './employeedetail/employeedetail.component';
 import {EmployeeService} from './employee.service';
+import { DepartmentComponent } from './department/department.component';
+import { StudentComponent } from './student/student.component';
+import { WildcardComponent } from './wildcard/wildcard.component';
+import { DefaultComponent } from './default/default.component';
 
 @NgModule({
   declarations: [
@@ -33,13 +37,18 @@ import {EmployeeService} from './employee.service';
     ViewItemComponent,
     CreateItemComponent,
     EmployeelistComponent,
-    EmployeedetailComponent
+    EmployeedetailComponent,
+    DepartmentComponent,
+    StudentComponent,
+    WildcardComponent,
+    DefaultComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    
   ],
   providers: [ModelService,EmployeeService],
   bootstrap: [AppComponent]

@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PipeComponent implements OnInit {
   
 
-  name='anju'
+  name:string='anju'
   today:number=Date.now()
   birthday = new Date(1988, 3, 15);
 
